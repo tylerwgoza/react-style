@@ -7,13 +7,20 @@ require('normalize.css/normalize.css');
 
 var StyleSheet   = require('react-style');
 StyleSheet.maxOverridesLength = 1; // defaults to 10
+/**
+ * @jsx React.DOM
+ */
+'use strict';
 
+require('normalize.css/normalize.css');
+
+var StyleSheet   = require('react-style');
 var React        = require('react');
 var Button       = require('./Button');
 var ButtonStyles = require('./ButtonStyles');
 var ButtonGroup  = require('./ButtonGroup');
 
-class TextAlignSwitcher extends React.Component {
+var TextAlignSwitcher = React.createClass({
 
   render() {
     var props = this.props;
@@ -41,7 +48,7 @@ class TextAlignSwitcher extends React.Component {
       </ButtonGroup>
     );
   }
-}
+});
 
 var TextAlignSwitcherStyles = StyleSheet.create({
 
@@ -62,14 +69,13 @@ var TextAlignSwitcherStyles = StyleSheet.create({
 
 });
 
-class Application extends React.Component {
+var Application = React.createClass({
 
-  constructor(props) {
-    super(props);
-    this.state = {
+  getInitialState() {
+    return {
       textAlign: 'left'
     };
-  }
+  },
 
   render() {
     return (
@@ -84,12 +90,12 @@ class Application extends React.Component {
         <TextAlignSwitcher
           styles={ApplicationStyles.lastChild}
           onTextAlign={(textAlign) => this.setState({textAlign: textAlign})}
-          />
+        />
       </div>
     );
   }
 
-}
+});
 
 
 var ApplicationStyles = StyleSheet.create({
@@ -98,7 +104,10 @@ var ApplicationStyles = StyleSheet.create({
     backgroundColor: 'white',
     fontSize: '10pt',
     padding: '1em',
-    margin: 10
+    margin: 10,
+    ':hover': {
+      backgroundColor: 'orange'
+    }
   },
 
   childStyle: {
@@ -111,14 +120,19 @@ var ApplicationStyles = StyleSheet.create({
 
   '@media screen and (min-width: 800px)': {
     normalStyle: {
-      backgroundColor: 'purple'
+      backgroundColor: 'purple',
+      ':hover': {
+        backgroundColor: 'green'
+      }
     },
     childStyle: {
       marginLeft: 50
     }
+
   }
 
 });
+
 
 if (typeof window !== 'undefined') {
   React.render(<Application />, document.getElementById('app'));

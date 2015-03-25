@@ -106,12 +106,19 @@ var ApplicationStyles = StyleSheet.create({
     marginRight: 0
   },
 
+  ':hover': {
+    backgroundColor: 'orange'
+  },
+
   '@media screen and (min-width: 800px)': {
     normalStyle: {
       backgroundColor: 'purple'
     },
     childStyle: {
       marginLeft: 50
+    },
+    ':hover': {
+      backgroundColor: 'green'
     }
   }
     
