@@ -1,7 +1,7 @@
 {
   "name": "react-style",
-  "version": "0.5.0-alpha.1",
-  "description": "Inline declarative styling for React.js components",
+  "version": "0.5.0",
+  "description": "Maintainable styling for React.js components",
   "main": "lib/index.js",
   "license": "MIT",
   "peerDependencies": {
