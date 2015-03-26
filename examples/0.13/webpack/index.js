@@ -111,7 +111,7 @@ var ApplicationStyles = StyleSheet.create({
   },
 
   additionalStyle: {
-    backgroundColor: 'purple'
+    backgroundColor: 'yellow'
   },
 
   childStyle: {
