@@ -6,7 +6,7 @@
 require('normalize.css/normalize.css');
 
 var StyleSheet   = require('react-style');
-StyleSheet.maxOverridesLength = 1; // defaults to 10
+// StyleSheet.maxOverridesLength = 1; // defaults to 10
 /**
  * @jsx React.DOM
  */
@@ -79,7 +79,7 @@ var Application = React.createClass({
 
   render() {
     return (
-      <div styles={ApplicationStyles.normalStyle}>
+      <div styles={[ApplicationStyles.normalStyle, ApplicationStyles.additionalStyle]}>
         <h1 styles={{textAlign: this.state.textAlign}}>Application</h1>
         <Button styles={[ButtonStyles.success]}>
           OK
@@ -108,6 +108,10 @@ var ApplicationStyles = StyleSheet.create({
     ':hover': {
       backgroundColor: 'orange'
     }
+  },
+
+  additionalStyle: {
+    backgroundColor: 'purple'
   },
 
   childStyle: {
