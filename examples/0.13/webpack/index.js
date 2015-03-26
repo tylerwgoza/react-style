@@ -6,11 +6,7 @@
 require('normalize.css/normalize.css');
 
 var StyleSheet   = require('react-style');
-// StyleSheet.maxOverridesLength = 1; // defaults to 10
-/**
- * @jsx React.DOM
- */
-'use strict';
+//StyleSheet.maxOverridesLength = 1; // defaults to 10
 
 require('normalize.css/normalize.css');
 
