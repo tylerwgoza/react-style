@@ -6,7 +6,7 @@
 require('normalize.css/normalize.css');
 
 var StyleSheet   = require('react-style');
-StyleSheet.maxOverridesLength = 1; // defaults to 10
+//StyleSheet.maxOverridesLength = 1; // defaults to 10
 
 var React        = require('react');
 var Button       = require('./Button');
