@@ -115,7 +115,9 @@ The following pseudo-classes are supported by React Style: `:active`, `:focus`,
     });
 
 It's possible to enable support for more pseudo-classes but those will only
-work when compiling to CSS.
+work when compiling to CSS:
+
+    Todo
 
 ## What's wrong with CSS/SCSS/less?
 A lot, and @vjeux covered it pretty good in his presentation: [CSS in JS][css-in-js]

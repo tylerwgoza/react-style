@@ -6,7 +6,7 @@
 require('normalize.css/normalize.css');
 
 var StyleSheet   = require('react-style');
-//StyleSheet.maxOverridesLength = 1; // defaults to 10
+// StyleSheet.maxOverridesLength = 1; // defaults to 10
 
 require('normalize.css/normalize.css');
 
@@ -75,7 +75,7 @@ var Application = React.createClass({
 
   render() {
     return (
-      <div styles={[ApplicationStyles.normalStyle, ApplicationStyles.additionalStyle]}>
+      <div styles={[ApplicationStyles.normalStyle]}>
         <h1 styles={{textAlign: this.state.textAlign}}>Application</h1>
         <Button styles={[ButtonStyles.success]}>
           OK
