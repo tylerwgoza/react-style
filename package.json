@@ -21,10 +21,5 @@
   "jest": {
     "rootDir": "",
     "scriptPreprocessor": "jest/preprocessor.js"
-  },
-  "browserify" : {
-    "transform" : [
-	  ["reactify", {"es6": true}]
-    ]
   }
 }
