@@ -14,18 +14,18 @@ var ButtonGroup  = require('./ButtonGroup');
 var TextAlignSwitcherStyles = StyleSheet.create`
 
   .childStyle {
-    borderRadius: 0;
+    border-radius: 0;
     margin: 0;
   }
 
   .firstChildStyle {
-    borderTopLeftRadius: 3px;
-    borderBottomLeftRadius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
 
   .lastChildStyle {
-    borderTopRightRadius: 3px;
-    borderBottomRightRadius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 
 `;
@@ -64,18 +64,30 @@ class TextAlignSwitcher extends React.Component {
 var ApplicationStyles = StyleSheet.create`
 
   .normalStyle {
-    backgroundColor: white;
-    fontSize: 10pt;
+    background-color: white;
+    font-size: 10pt;
     padding: 1em;
     margin: 10px;
   }
 
   .childStyle {
-    marginRight: 0.5em
+    margin-right: 0.5em
   }
 
   .lastChildStyle {
-    marginRight: 0
+    margin-right: 0
+  }
+
+  @media screen and (min-width: 800px) {
+
+    .normalStyle {
+      background-color: purple;
+    }
+
+    .childStyle {
+      margin-left: 50
+    }
+
   }
 
 `;
