@@ -99,8 +99,6 @@ Media queries are supported by React Style with the following syntax:
 If you want to use media queries inside the `render` function, we recommend
 using `window.matchMedia`.
 
-Currently not supported by React Style Syntax helpers.
-
 ## What's wrong with CSS/SCSS/less?
 A lot, and @vjeux covered it pretty good in his presentation: [CSS in JS][css-in-js]
 
