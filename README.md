@@ -4,7 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/js-next/react-style/badges/gpa.svg)](https://codeclimate.com/github/js-next/react-style)
 
 React Style is an approach for styling [React][] components. It uses the same
-syntax as `StyleSheet.create` from React Native.
+syntax as `StyleSheet.create` from [React Native][].
 
 Define styles using full power of JavaScript:
 
@@ -99,8 +99,6 @@ Media queries are supported by React Style with the following syntax:
 If you want to use media queries inside the `render` function, we recommend
 using `window.matchMedia`.
 
-Currently not supported by React Style Syntax helpers.
-
 ## What's wrong with CSS/SCSS/less?
 A lot, and @vjeux covered it pretty good in his presentation: [CSS in JS][css-in-js]
 
@@ -143,3 +141,4 @@ MIT
 [es6-templ]: http://tc39wiki.calculist.org/es6/template-strings/
 [css-in-js]: https://speakerdeck.com/vjeux/react-css-in-js
 [react-magician]: https://github.com/SanderSpies/react-magician
+[React Native]: http://facebook.github.io/react-native/docs/stylesheet.html#content
