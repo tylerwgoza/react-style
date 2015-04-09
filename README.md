@@ -68,7 +68,7 @@ There's [React Style syntax][] which allows you to write styles like this:
 And have it transformed into:
 
     var styles = StyleSheet.create({
-      foo {
+      foo: {
         color: 'red',
         backgroundColor: 'white'
       }
