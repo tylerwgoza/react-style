@@ -1,6 +1,6 @@
 {
   "name": "react-style",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "Maintainable styling for React.js components",
   "main": "lib/index.js",
   "license": "MIT",
