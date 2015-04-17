@@ -72,6 +72,12 @@ var ButtonStyles = StyleSheet.create({
   focusStyle: {
     backgroundImage: 'linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10))',
     outline: 'none'
+  },
+
+  '@media screen and (min-width: 800px)': {
+    normalStyle: {
+      backgroundColor: 'navy'
+    }
   }
 
 });
